@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Laat UI - Premium UI Components",
+  title: "Laat UI - Premium UI Components and Templates",
   description: "Premium UI component library with modern designs, smooth animations, and production-ready code.",
 };
 
