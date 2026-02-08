@@ -69,6 +69,26 @@ const registry: ComponentEntry[] = [
       () => import("@/components/Downscrolleffect/downscroll")
     ),
   },
+  {
+    name: "Mega Menu Header",
+    category: "Headers",
+    route: "/header-two",
+    component: dynamic(() => import("@/components/Headers/headerTwo")),
+  },
+  {
+    name: "Hero Testimonial",
+    category: "Testimonials",
+    route: "/testimonial",
+    component: dynamic(
+      () => import("@/components/Testimonials/hero-testimonial")
+    ),
+  },
+  {
+    name: "Button Collection",
+    category: "Buttons",
+    route: "/button-one",
+    component: dynamic(() => import("@/components/buttons/buttonone")),
+  },
 ];
 
 export default registry;
