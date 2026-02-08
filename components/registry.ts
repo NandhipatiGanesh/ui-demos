@@ -97,6 +97,46 @@ const registry: ComponentEntry[] = [
     route: "/button-one",
     component: dynamic(() => import("@/components/buttons/buttonone")),
   },
+  {
+    name: "FAQ Section V2",
+    category: "FAQs",
+    route: "/faq-two",
+    component: dynamic(() =>
+      import("@/components/FAQs/faq-section").then((mod) => ({
+        default: mod.FaqSection,
+      }))
+    ),
+  },
+  {
+    name: "Pricing Section V2",
+    category: "Pricing",
+    route: "/pricing-two",
+    component: dynamic(() =>
+      import("@/components/PricingSections/pricing-two").then((mod) => ({
+        default: mod.PricingSection,
+      }))
+    ),
+  },
+  {
+    name: "Testimonials Section",
+    category: "Testimonials",
+    route: "/testimonial-two",
+    component: dynamic(() =>
+      import("@/components/Testimonials/page-testimonials").then((mod) => ({
+        default: mod.TestimonialsSection,
+      }))
+    ),
+  },
+  {
+    name: "Solution Accordion Tabs",
+    category: "Accordions",
+    route: "/accordion-tab",
+    component: dynamic(() =>
+      import("@/components/Accordions/accordion-tabs").then((mod) => ({
+        default: mod.SolutionSection,
+      }))
+    ),
+  },
 ];
 
 export default registry;

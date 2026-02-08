@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Rethink_Sans } from "next/font/google";
+import { Geist, Geist_Mono, Rethink_Sans, Lexend, Outfit } from "next/font/google";
 import "./globals.css";
 import Breadcrumb from "@/components/Breadcrumb";
 
@@ -19,6 +19,18 @@ const rethinkSans = Rethink_Sans({
   weight: ["400", "500", "600", "700", "800"],
 });
 
+const lexend = Lexend({
+  variable: "--font-lexend",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
+
+const outfit = Outfit({
+  variable: "--font-outfit",
+  subsets: ["latin"],
+  weight: ["500", "600", "700", "800"],
+});
+
 export const metadata: Metadata = {
   title: "Laat UI - Premium UI Components and Templates",
   description: "Premium UI component library with modern designs, smooth animations, and production-ready code.",
@@ -32,7 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${rethinkSans.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${rethinkSans.variable} ${lexend.variable} ${outfit.variable} antialiased`}
       >
         <Breadcrumb />
         {children}
