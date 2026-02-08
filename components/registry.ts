@@ -76,6 +76,14 @@ const registry: ComponentEntry[] = [
     component: dynamic(() => import("@/components/Headers/headerTwo")),
   },
   {
+    name: "Mega Menu Header V3",
+    category: "Headers",
+    route: "/header-three",
+    component: dynamic(() => import("@/components/Headers/headerThree")),
+  },
+
+  
+  {
     name: "Hero Testimonial",
     category: "Testimonials",
     route: "/testimonial",
